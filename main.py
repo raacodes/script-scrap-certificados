@@ -14,7 +14,8 @@ PALAVRAS_CHAVE_FABRICANTES = {
     "AWS": ["aws", "aws certification"],
     "Red Hat": ["red hat", "red hat certified"],
     "Liferay": ["liferay", "liferay certified"],
-    "Delphix": ["delphix"]
+    "Delphix": ["delphix"],
+    "Oracle": ["oracle", "oracle certified"],
 }
 PALAVRAS_CHAVE_EXCLUSAO = ["alura", "udemy", "coursera", "curriculo", "currículo"]
 
@@ -151,7 +152,7 @@ def salvar_em_csv(dados: List[Dict], arquivo_saida: str):
         escritor.writerows(dados)
 
 def main():
-    diretorio = './colaboradores'
+    diretorio = './colaboradores-2'
     arquivo_saida = 'certificados_encontrados.csv'
     
     print(f"Iniciando o processamento da pasta '{diretorio}'...")
